@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Webcetera</title>
+<link href="./stylesheets/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+padding-top: 60px;
+padding-bottom: 40px;
+}
+.sidebar-nav {
+padding: 9px 0;
+}
+</style>
+<script src="./javascripts/jquery.js"></script>
+<script src="./javascripts/jquery.easy-ticker.js"></script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container-fluid">
+<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<a href="#" class="brand" style="color:white;font-weight:bold">Webcetera Club</a>
+<div class="nav-collapse collapse">
+
+<ul class="nav">
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="clubs.html">Clubs</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="enrollment.html">Enrolment Form</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3">
+<div class="well sidebar-nav">
+
+<!-- news ticker -->
+<h5>&nbsp;<i class="icon-globe"></i> Latest News</h5>
+<div class="demo1">
+<div style="position: absolute; margin: 0px; top: 0px;">
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+
+<div>
+<a href="#">The world of Gilbert and George</a>
+<p>The art duo of Gilbert and George on how their work can ruffle feathers and the benefits of routine.</p>
+</div>
+<div>
+<a href="#">From propaganda to pop artist</a>
+<p>Song Byeok had every reason to be pleased with his success. A gift for drawing led to a prestigious career as a propaganda artist and full membership in North Korea's communist party.</p>
+</div>
+</div>
+
+
+
+</div>
+<!-- news ticker -->
+
+</div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+
+<h1>Gallery to be implemented soon!!</h1>
+</div><!--/span-->
+</div><!--/row-->
+
+<hr>
+
+<footer>
+<p>&copy;Webcetera Software Company 2012</p>
+</footer>
+
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.demo1').easyTicker({
+      direction: 'up'
+    });
+
+    $(".demo1").css('height', '390px')
+
+    $(".demo1").css('border', '0px')
+
+  });
+</script>
+
+<style type="text/css">
+  .demo1{
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .demo1 div div{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+
+
+</body>
+</html>
+
