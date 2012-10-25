@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Webcetera</title>
+<link href="./stylesheets/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+padding-top: 60px;
+padding-bottom: 40px;
+}
+.sidebar-nav {
+padding: 9px 0;
+}
+</style>
+<script src="./javascripts/jquery.js"></script>
+<script src="./javascripts/jquery.easy-ticker.js"></script>
+
+<script type="text/javascript" src="./javascripts/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="./javascripts/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/jquery.fancybox-1.3.4.css" media="screen" />
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+      *   Examples - images
+      */
+
+      $("a#example1").fancybox();
+
+      $("a#example2").fancybox({
+        'overlayShow' : false,
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic'
+      });
+
+      $("a#example3").fancybox({
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none'  
+      });
+
+      $("a#example4").fancybox({
+        'opacity'   : true,
+        'overlayShow' : false,
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'none'
+      });
+
+      $("a#example5").fancybox();
+
+      $("a#example6").fancybox({
+        'titlePosition'   : 'outside',
+        'overlayColor'    : '#000',
+        'overlayOpacity'  : 0.9
+      });
+
+      $("a#example7").fancybox({
+        'titlePosition' : 'inside'
+      });
+
+      $("a#example8").fancybox({
+        'titlePosition' : 'over'
+      });
+
+      $("a[rel=example_group]").fancybox({
+        'transitionIn'    : 'none',
+        'transitionOut'   : 'none',
+        'titlePosition'   : 'over',
+        'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
+          return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+      });
+
+      /*
+      *   Examples - various
+      */
+
+      $("#various1").fancybox({
+        'titlePosition'   : 'inside',
+        'transitionIn'    : 'none',
+        'transitionOut'   : 'none'
+      });
+
+      $("#various2").fancybox();
+
+      $("#various3").fancybox({
+        'width'       : '75%',
+        'height'      : '75%',
+        'autoScale'     : false,
+        'transitionIn'    : 'none',
+        'transitionOut'   : 'none',
+        'type'        : 'iframe'
+      });
+
+      $("#various4").fancybox({
+        'padding'     : 0,
+        'autoScale'     : false,
+        'transitionIn'    : 'none',
+        'transitionOut'   : 'none'
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container-fluid">
+<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<a href="#" class="brand" style="color:white;font-weight:bold">Webcetera Club</a>
+<div class="nav-collapse collapse">
+
+<ul class="nav">
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="clubs.html">Clubs</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="enrollment.html">Enrolment Form</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span3">
+<div class="well sidebar-nav">
+
+<!-- news ticker -->
+<h5>&nbsp;<i class="icon-globe"></i> Latest News</h5>
+<div class="demo1">
+<div style="position: absolute; margin: 0px; top: 0px;">
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+<div>
+<a href="#">Japan's inspirational footballer</a>
+<p>CNN's Kyung Lah sits down with Japan's World Cup-winning captain to reflect on their win amid tragedy.</p>
+</div>
+
+<div>
+<a href="#">The world of Gilbert and George</a>
+<p>The art duo of Gilbert and George on how their work can ruffle feathers and the benefits of routine.</p>
+</div>
+<div>
+<a href="#">From propaganda to pop artist</a>
+<p>Song Byeok had every reason to be pleased with his success. A gift for drawing led to a prestigious career as a propaganda artist and full membership in North Korea's communist party.</p>
+</div>
+</div>
+
+
+
+</div>
+<!-- news ticker -->
+
+</div><!--/.well -->
+</div><!--/span-->
+<div class="span9">
+
+<p>
+    Different animations<br>
+
+    <a href="./example/1_b.jpg" id="example1"><img src="./example/1_s.jpg" alt="example1"></a>
+
+    <a href="./example/2_b.jpg" id="example2"><img src="./example/2_s.jpg" alt="example2"></a>
+
+    <a href="./example/3_b.jpg" id="example3"><img src="./example/3_s.jpg" alt="example3"></a>
+    
+    <a href="./example/4_b.jpg" id="example4"><img src="./example/4_s.jpg" alt="example4" class="last"></a>
+  </p>
+
+  <p>
+    Different title positions<br>
+
+    <a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." href="./example/5_b.jpg" id="example5"><img src="./example/5_s.jpg" alt="example4"></a>
+    
+    <a title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Vivamus fringilla congue laoreet." href="./example/6_b.jpg" id="example6"><img src="./example/6_s.jpg" alt="example5"></a>
+
+    <a title="Cras neque mi, semper at interdum id, dapibus in leo. Suspendisse nunc leo, eleifend sit amet iaculis et, cursus sed turpis." href="./example/7_b.jpg" id="example7"><img src="./example/7_s.jpg" alt="example6"></a>
+
+    <a title="Sed vel sapien vel sem tempus placerat eu ut tortor. Nulla facilisi. Sed adipiscing, turpis ut cursus molestie, sem eros viverra mauris, quis sollicitudin sapien enim nec est. ras pulvinar placerat diam eu consectetur." href="./example/8_b.jpg" id="example8"><img src="./example/8_s.jpg" alt="example7" class="last"></a>
+  </p>
+
+
+
+
+</div><!--/span-->
+</div><!--/row-->
+
+<hr>
+
+<footer>
+<p>&copy;Webcetera Software Company 2012</p>
+</footer>
+
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.demo1').easyTicker({
+      direction: 'up'
+    });
+
+    $(".demo1").css('height', '390px')
+
+    $(".demo1").css('border', '0px')
+
+  });
+</script>
+
+<style type="text/css">
+  .demo1{
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .demo1 div div{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+
+
+</body>
+</html>
+
